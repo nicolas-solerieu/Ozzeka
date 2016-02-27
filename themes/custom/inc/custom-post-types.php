@@ -9,20 +9,20 @@ function create_post_type() {
 
 /* --- WORKS ----*/
 register_post_type(
-    'work',   
+    'services',   
     array(
-        'label' => 'Works',
+        'label' => 'Services',
         'labels' => array(
-            'name' => 'Works',
-            'singular_name' => 'Work',
-            'all_items' => 'All works',
-            'add_new_item' => 'Add a new work',
-            'edit_item' => 'Edit work',
-            'new_item' => 'New work',
-            'view_item' => 'See work',
-            'search_items' => 'Search works',
-            'not_found' => 'No work found',
-            'not_found_in_trash'=> 'No works found in trash'
+            'name' => 'Services',
+            'singular_name' => 'Service',
+            'all_items' => 'All services',
+            'add_new_item' => 'Add a new service',
+            'edit_item' => 'Edit service',
+            'new_item' => 'New service',
+            'view_item' => 'See service',
+            'search_items' => 'Search services',
+            'not_found' => 'No service found',
+            'not_found_in_trash'=> 'No services found in trash'
         ),
     'public' => true,
     'capability_type' => 'post',
@@ -35,37 +35,6 @@ register_post_type(
     'has_archive' => false
     )
 );
-
-
-/* --- SHOTS ----*/
-register_post_type(
-    'shot',
-    array(
-        'label' => 'Shots',
-        'labels' => array(
-            'name' => 'Shots',
-            'singular_name' => 'Shot',
-            'all_items' => 'All shots',
-            'add_new_item' => 'Add a new shot',
-            'edit_item' => 'Edit shot',
-            'new_item' => 'New shot',
-            'view_item' => 'See shot',
-            'search_items' => 'Search shots',
-            'not_found' => 'No shot found',
-            'not_found_in_trash'=> 'No shots found in trash'
-        ),
-    'public' => true,
-    'capability_type' => 'post',
-    'supports' => array(
-        'title',
-        'excerpt',
-        'editor',
-        'thumbnail'
-    ),
-    'has_archive' => false
-    )
-);
-
 
 }
 
