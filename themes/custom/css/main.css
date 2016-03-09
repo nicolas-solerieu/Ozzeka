@@ -242,7 +242,7 @@ a {
 /* =HERO
 -------------------------------------------------------------- */
 section.hero {
-  height: 300px;
+  height: 360px;
   background: rgba(0,0,0,0.7);
 }
 
@@ -251,7 +251,7 @@ section.hero {
 /* =CONCEPT
 -------------------------------------------------------------- */
 section.concept {
-  padding: 70px 0;
+  padding: 20px 0 70px 0;
   background: #ffffff;
 }
 .headline {
@@ -296,7 +296,7 @@ section.services .section-header h2 i {
 .box-skill {
   float: left;
   width: 48%;
-  height: 450px;
+  height: 320px;
   padding: 50px;
   margin: 0 0 4% 0;
   background-color: #000000;
@@ -305,7 +305,7 @@ section.services .section-header h2 i {
 .box-skill:nth-child(2n) {
   float: left;
   width: 48%;
-  height: 450px;
+  height: 320px;
   padding: 50px;
   margin: 0 0 4% 4%;
   background-size: cover;
@@ -399,6 +399,7 @@ section.contact {
   color: #121212;
   display: inline-block;
   width: 100%;
+  transition: all ease 0.3s;
 }
 .big-social-link:first-of-type {
   margin: 20px 0 0 0;
@@ -408,6 +409,13 @@ section.contact {
   float: right;
   font-size: 19px;
   margin: 3px 0 0 0;
+  transition: all ease 0.3s;
+}
+.big-social-link:hover {
+  color: #999999;
+}
+.big-social-link:hover i {
+  color: #e74c3c;
 }
 
 
@@ -489,7 +497,7 @@ input:focus, textarea:focus {
 -------------------------------------------------------------- */
 section.extras {
   padding: 90px 0;
-  background: rgba(0,0,0,0.7);
+  background: #222222 url('../img/bg-last-section.jpg') center no-repeat;
 }
 section.extras .section-header {
   border-top: 4px solid #ffffff;
@@ -608,11 +616,11 @@ section.extras .section-header h2 {
 /* =FOOTER
 -------------------------------------------------------------- */
 .site-footer {
-  padding: 70px 0 90px 0;
+  padding: 50px 0 60px 0;
   background: #121212;
 }
 .logo-footer {
-  width: 150px;
+  width: 100px;
   display: inline-block;
   height: auto;
 }
